@@ -1,0 +1,29 @@
+<header>
+    <app-navbar></app-navbar>
+    <div class="hero">
+        <div class="left">
+            <h1>Welcome to <span class="special"> RecipeBook!</span></h1>
+            <p>Discover and share your favorite recipes with ease. Our RecipeBook app lets you browse a diverse collection of delicious dishes, 
+                find inspiration for your next meal, and save your go-to recipes all in one place.</p>
+            <a href="/recipes" class="secondary-btn hero-btn">View Recipes</a>
+        </div>
+        <div class="right">
+            <div class="side-bar">
+                <div class="watermark">RecipeBook</div>
+            </div>
+            <img src="boiled_eggs.png" class="plate plate-1" alt="hero">
+            <img src="tortillas.png" class="plate plate-2" alt="hero">
+            <img src="aesthetic_dish.png" class="plate plate-2" alt="hero">
+            <img src="CHICKEN_BREAST.png" class="plate plate-2" alt="hero">
+        </div>
+    </div>
+</header>
+<main>
+    <section>
+        <h2>Discover Our Top Dishes</h2>
+        <div *ngFor="let user of users">
+            <h2>{{ user.username }}</h2>
+            <p>{{ user.email }}</p>
+        </div>
+    </section>
+</main>

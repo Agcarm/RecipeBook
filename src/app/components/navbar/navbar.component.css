@@ -1,0 +1,61 @@
+.navbar {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-right: 40px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: var(--font-bold);
+    transition: all 0.3s ease;
+}
+
+.navbar-links li a::after{
+    content: '';
+    display: block;
+    margin: auto;
+    width: 0%;
+    height: 2.4px;
+    border-radius: 20px;
+    background: var(--primary-color);
+    transition: all 0.2s ease;
+}
+
+.navbar-links li a:hover::after, .navbar-links li a.active::after{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar-links li a:hover, .navbar-links li a.active{
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.signup-button{
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    border-radius: 100px;
+    font-weight: var(--font-bold);
+    transition: all 0.3s ease;
+}
+
+a.signup-button:hover{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transition: all 0.3s ease;
+}
