@@ -19,10 +19,11 @@
     </div>
 </header>
 <main>
-    <section>
-        <h2>Discover Our Top Dishes</h2>
-        <div *ngFor="let user of users">
-            <h2>{{ user.username }}</h2>
+    <h2>Discover Our Top Dishes</h2>
+    <section class="recipe-cards">
+        <div *ngFor="let user of users" class="recipe-card">
+            <div class="image" style="background-image: url(d93462c2-65cf-4835-9c92-6e2153ab2141.jpg);"></div>
+            <h3>{{ user.username }}</h3>
             <p>{{ user.email }}</p>
         </div>
     </section>
